@@ -1,0 +1,126 @@
+/* 基本样式 */
+.header-content {
+    background-color: #f4f3ee;
+    color: #0d1b2a;
+    text-align: center;
+    width: 100%; /* 横向占满整个屏幕 */
+    font-size: 36px; /* 根据需要调整标题的字体大小 */
+    font-weight: bold; /* 加粗文本 */
+}
+
+body {
+    text-align: center; /* 水平居中 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* 使内容垂直居中 */
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+.card {
+    border: 6px solid #e5e5e5;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    
+}
+
+.card__content {
+    padding: 20px;
+}
+
+.card img{
+    max-width: 85%;
+    height: auto;
+    top: 40px;
+    position: relative; /* 設置相對定位 */
+    top: 18px; /* 將圖片向下移動20像素 */
+}
+
+.link {
+    color: #5b718d; /* 更改链接文字颜色为橙色 (#ff6600)，您可以根据需要选择其他颜色 */
+    text-decoration: none; /* 去除链接的下划线 */
+    transition: color 0.2s; /* 添加颜色过渡效果 */
+    font-weight: bold;
+}
+
+.link:hover {
+    color: #e0e1dd; /* 更改链接的悬停颜色，例如橙色变为深橙色 (#ff3300) */
+}
+button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #585858;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 14px;
+    font-weight: 200;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+   }
+   
+   button:disabled {
+    pointer-events: none;
+   }
+   
+   button:hover {
+    color: #fff;
+    background-color: #2e2e2e;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+   }
+   
+   button:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
+
+   /* 用於小螢幕設備的樣式 */
+@media (max-width: 768px) {
+    /* 在這裡添加相應的CSS規則 */
+  }
+  
+  /* 用於中型螢幕設備的樣式 */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* 在這裡添加相應的CSS規則 */
+  }
+  
+  /* 用於大螢幕設備的樣式 */
+  @media (min-width: 1025px) {
+    /* 在這裡添加相應的CSS規則 */
+  }
+  
